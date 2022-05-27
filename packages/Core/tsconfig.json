@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "es5",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "allowUnreachableCode": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "jsx": "react",
+    "outDir": "../../dist/core"
+  },
+  "include": ["index.tsx", "./Text/index.tsx"],
+  "exclude": ["node_modules", "stories", "**/*.stories.tsx", ".storybook"],
+}
