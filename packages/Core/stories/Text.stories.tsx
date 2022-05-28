@@ -14,37 +14,31 @@ const HeadingTemplate: ComponentStory<typeof Text> = (args) => (
 
 export const Heading1 = HeadingTemplate.bind({});
 Heading1.args = {
-  variant: "primary",
   as: "h1",
 };
 
 export const Heading2 = HeadingTemplate.bind({});
 Heading2.args = {
-  variant: "primary",
   as: "h2",
 };
 
 export const Heading3 = HeadingTemplate.bind({});
 Heading3.args = {
-  variant: "primary",
   as: "h3",
 };
 
 export const Heading4 = HeadingTemplate.bind({});
 Heading4.args = {
-  variant: "primary",
   as: "h4",
 };
 
 export const Heading5 = HeadingTemplate.bind({});
 Heading5.args = {
-  variant: "primary",
   as: "h5",
 };
 
 export const Heading6 = HeadingTemplate.bind({});
 Heading6.args = {
-  variant: "primary",
   as: "h6",
 };
 
@@ -76,7 +70,6 @@ const TextTemplate: ComponentStory<typeof Text> = (args) => (
 
 export const Paragraph = TextTemplate.bind({});
 Paragraph.args = {
-  variant: "primary",
   as: "p",
 };
 
@@ -86,6 +79,5 @@ const SpanTemplate: ComponentStory<typeof Text> = (args) => (
 
 export const Span = SpanTemplate.bind({});
 Span.args = {
-  variant: "primary",
   as: "span",
 };

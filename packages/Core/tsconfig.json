@@ -21,6 +21,6 @@
     "jsx": "react",
     "outDir": "../../dist/core"
   },
-  "include": ["index.tsx", "./Text/index.tsx"],
+  "include": ["index.tsx", "./**/*.tsx"],
   "exclude": ["node_modules", "stories", "**/*.stories.tsx", ".storybook"],
 }

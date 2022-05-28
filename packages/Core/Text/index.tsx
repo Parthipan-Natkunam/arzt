@@ -36,13 +36,15 @@ const StyledTextFactory = (tag: any) => styled(tag)`
       ? props.theme.fontWeight[props.weight as string]
       : props.theme.fontWeight.normal};
   color: ${(props) =>
-    props.theme.colors[props.variant] || props.theme.default.textColor};
+    props.variant
+      ? props.theme.colors[props.variant]
+      : props.theme.default.textColor};
 `;
 
 export const Text: React.FC<TextProps> = ({
   as = "p",
-  size = "md",
-  variant = "primary",
+  size,
+  variant,
   margin,
   padding,
   weight,
