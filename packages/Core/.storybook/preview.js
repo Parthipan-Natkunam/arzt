@@ -18,4 +18,13 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  backgrounds: {
+  default: 'Atzt Default Background',
+    values: [
+      {
+        name: 'Atzt Default Background',
+        value: '#EFF6F4',
+      }
+    ],
+  },
 };

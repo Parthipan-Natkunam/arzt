@@ -12,6 +12,7 @@ declare module "@arzt/core" {
     colors: {[key in Variant]: string},
     default: {
       textColor: string,
+      textColorInverted: string,
       backgroundColor: string,
       fontSize: string,
     },
