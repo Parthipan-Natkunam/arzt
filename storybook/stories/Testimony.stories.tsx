@@ -8,16 +8,25 @@ export default {
   component: Testimony,
 } as ComponentMeta<typeof Testimony>;
 
-const ImageTemplate: ComponentStory<typeof Testimony> = (args) => (
+const TestimonyTemplate: ComponentStory<typeof Testimony> = (args) => (
   <Testimony {...args} />
 );
 
-export const TestimonyBlock = ImageTemplate.bind({});
-TestimonyBlock.args = {
+export const TestimonyWithSubheading = TestimonyTemplate.bind({});
+TestimonyWithSubheading.args = {
   imageAlt: "Sample Image",
   imageSrc: "https://randomuser.me/api/portraits/women/70.jpg",
   heading: "Lisa Simpson",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverr mollis diam, id semper purus pellentesque eget. Nulla nec aliquam turpis.Integer ex odio, viverra ut velit vel, molestie rutrum mauris. Aenean eget ante at turpis viverra pulvinar eu non arcu. Donec nec neque eu sapienmattis hendrerit.",
   subHeading: "Neuro-Surgeon (MBBS, MS in Neurology)",
+};
+
+export const TestimonyWithoutSubheading = TestimonyTemplate.bind({});
+TestimonyWithoutSubheading.args = {
+  imageAlt: "Sample Image",
+  imageSrc: "https://randomuser.me/api/portraits/women/70.jpg",
+  heading: "Lisa Simpson",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverr mollis diam, id semper purus pellentesque eget. Nulla nec aliquam turpis.Integer ex odio, viverra ut velit vel, molestie rutrum mauris. Aenean eget ante at turpis viverra pulvinar eu non arcu. Donec nec neque eu sapienmattis hendrerit.",
 };

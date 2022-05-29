@@ -5,11 +5,11 @@ import { Text } from "@arzt/core/Text";
 import { Image } from "@arzt/core/Image";
 
 export type TestimonyProps = {
-  heading?: string;
+  heading: string;
   subHeading?: string;
   imageSrc: string;
   imageAlt: string;
-  description?: string;
+  description: string;
 };
 
 const TestimonyContainer = styled.div`
@@ -45,9 +45,11 @@ export const Testimony: React.FC<TestimonyProps> = ({
       <Text as="h5" variant="primary">
         {heading}
       </Text>
-      <Text as="h6" variant="secondary">
-        {subHeading}
-      </Text>
+      {subHeading ? (
+        <Text as="h6" variant="secondary">
+          {subHeading}
+        </Text>
+      ) : null}
       <Text as="p" size="xs">
         {description}
       </Text>
