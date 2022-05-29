@@ -13,29 +13,29 @@ export const ArztDefaultTheme: Theme = {
   },
   headings: {
     h1: {
-      fontSize: "2.75rem",
+      fontSize: "3rem",
     },
     h2: {
-      fontSize: "2.5rem",
+      fontSize: "2.75rem",
     },
     h3: {
-      fontSize: "2rem",
+      fontSize: "2.5rem",
     },
     h4: {
-      fontSize: "1.75rem",
+      fontSize: "2rem",
     },
     h5: {
-      fontSize: "1.5rem",
+      fontSize: "1.75rem",
     },
     h6: {
-      fontSize: "1.25rem",
+      fontSize: "1.5rem",
     },
   },
   fontSize: {
     xs: "0.75rem",
-    sm: "1rem",
-    md: "1.25rem",
-    lg: "1.5rem",
+    sm: "0.9rem",
+    md: "1rem",
+    lg: "1.25rem",
   },
   fontWeight: {
     light: 300,

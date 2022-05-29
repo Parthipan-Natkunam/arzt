@@ -23,11 +23,11 @@ const TestimonyContainer = styled.div`
     flex-direction: column;
     h5 {
       margin-bottom: ${(props) => props.theme.spacing.sm};
-      font-size: ${(props) => props.theme.fontSize.sm};
+      font-size: ${(props) => props.theme.fontSize.md};
     }
     h6 {
       margin-bottom: ${(props) => props.theme.spacing.sm};
-      font-size: ${(props) => props.theme.fontSize.xs};
+      font-size: ${(props) => props.theme.fontSize.sm};
     }
   }
 `;
@@ -50,7 +50,7 @@ export const Testimony: React.FC<TestimonyProps> = ({
           {subHeading}
         </Text>
       ) : null}
-      <Text as="p" size="xs">
+      <Text as="p" size="sm">
         {description}
       </Text>
     </div>
