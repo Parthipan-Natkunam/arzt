@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { Comment } from "@arzt/blocks/Comment";
 
 export default {
-  title: "Blocks/Thumbnail",
+  title: "Blocks/Comment",
   component: Comment,
 } as ComponentMeta<typeof Comment>;
 
