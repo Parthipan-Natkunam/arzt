@@ -51,6 +51,7 @@ export const ArztDefaultTheme: Theme = {
     info: "#0086AC",
     warning: "#D6A251",
     danger: "#A33B3F",
+    disabled: "#A0ACBD",
   },
   default: {
     textColor: "#373728",

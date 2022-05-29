@@ -9,7 +9,7 @@ declare module "@arzt/core" {
     spacing: {[key in Space]: string},
     fontSize: {[key in Size]: string},
     fontWeight: {[key in Weight]: number},
-    colors: {[key in Variant]: string},
+    colors: {[key in Variant | "disabled"]: string},
     default: {
       textColor: string,
       textColorInverted: string,
