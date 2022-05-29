@@ -21,6 +21,6 @@
     "jsx": "react",
     "outDir": "../../dist/core"
   },
-  "include": ["index.tsx", "./**/*.tsx"],
+  "include": ["./**/*.tsx"],
   "exclude": ["node_modules"],
 }
