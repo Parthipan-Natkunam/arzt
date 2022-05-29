@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Text } from "@arzt/core/Text";
 import { Image } from "@arzt/core/Image";
 
-export type ThumbnailProps = {
+export type CommentProps = {
   heading?: string;
   subHeading?: string;
   imageSrc: string;
@@ -12,11 +12,11 @@ export type ThumbnailProps = {
   description?: string;
 };
 
-const ThumbnailContainer = styled.div`
+const CommentContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
-  padding: ${(props) => props.theme.spacing.sm} ;
+  padding: ${(props) => props.theme.spacing.sm};
   border: 1px solid ${(props) => props.theme.colors.info};
   div {
     display: flex;
@@ -32,15 +32,15 @@ const ThumbnailContainer = styled.div`
   }
 `;
 
-export const Thumbnail: React.FC<ThumbnailProps> = ({
+export const Comment: React.FC<CommentProps> = ({
   heading,
   subHeading,
   imageSrc,
   imageAlt,
   description,
 }) => (
-  <ThumbnailContainer>
-    <Image src={imageSrc} alt={imageAlt} width={50} rounded margin="md"/>
+  <CommentContainer>
+    <Image src={imageSrc} alt={imageAlt} width={50} rounded margin="md" />
     <div>
       <Text as="h5" variant="primary">
         {heading}
@@ -52,5 +52,5 @@ export const Thumbnail: React.FC<ThumbnailProps> = ({
         {description}
       </Text>
     </div>
-  </ThumbnailContainer>
+  </CommentContainer>
 );

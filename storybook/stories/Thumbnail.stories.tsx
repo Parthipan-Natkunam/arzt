@@ -1,19 +1,19 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Thumbnail } from "@arzt/blocks/Thumbnail";
+import { Comment } from "@arzt/blocks/Comment";
 
 export default {
   title: "Blocks/Thumbnail",
-  component: Thumbnail,
-} as ComponentMeta<typeof Thumbnail>;
+  component: Comment,
+} as ComponentMeta<typeof Comment>;
 
-const ImageTemplate: ComponentStory<typeof Thumbnail> = (args) => (
-  <Thumbnail {...args} />
+const ImageTemplate: ComponentStory<typeof Comment> = (args) => (
+  <Comment {...args} />
 );
 
-export const ThumbnailBlock = ImageTemplate.bind({});
-ThumbnailBlock.args = {
+export const CommentBlock = ImageTemplate.bind({});
+CommentBlock.args = {
   imageAlt: "Sample Image",
   imageSrc: "https://randomuser.me/api/portraits/women/70.jpg",
   heading: "Lisa Simpson",
