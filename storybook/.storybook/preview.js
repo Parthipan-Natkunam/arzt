@@ -1,4 +1,5 @@
 import React from "react";
+import { themes } from '@storybook/theming';
 
 import { ArztThemeProvider } from "@arzt/core/Theme";
 
@@ -26,5 +27,8 @@ export const parameters = {
         value: '#EFF6F4',
       }
     ],
+  },
+  docs: {
+    theme: themes.dark,
   },
 };

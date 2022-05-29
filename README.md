@@ -1,6 +1,5 @@
 <p align="center">
 <img src="./img/arzt.png" height=250 alt="logo">
-<span> Arzt </span>
 </p>
 
 # Arzt
