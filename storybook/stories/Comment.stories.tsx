@@ -19,5 +19,5 @@ CommentBlock.args = {
   heading: "Lisa Simpson",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverr mollis diam, id semper purus pellentesque eget. Nulla nec aliquam turpis.Integer ex odio, viverra ut velit vel, molestie rutrum mauris. Aenean eget ante at turpis viverra pulvinar eu non arcu. Donec nec neque eu sapienmattis hendrerit.",
-  subHeading: "Product Designer",
+  subHeading: "Neuro-Surgeon (MBBS, MS in Neurology)",
 };

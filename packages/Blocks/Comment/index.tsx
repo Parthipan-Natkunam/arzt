@@ -48,7 +48,7 @@ export const Comment: React.FC<CommentProps> = ({
       <Text as="h6" variant="secondary">
         {subHeading}
       </Text>
-      <Text as="p" variant="tertiary" size="xs">
+      <Text as="p" size="xs">
         {description}
       </Text>
     </div>
