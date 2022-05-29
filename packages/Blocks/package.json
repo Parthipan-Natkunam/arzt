@@ -1,17 +1,25 @@
 {
   "name": "@arzt/blocks",
   "description": "Arzt design system UI blocks",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "Parthipan Natkunam",
   "license": "MIT",
   "sourceMap": true,
-  "main": "./index.js",
-  "typings": "./index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/*.js",
+    "dist/**/*.js",
+    "dist/*.d.ts",
+    "dist/**/*.d.ts",
+    "dist/*.js.map",
+    "dist/**/*.js.map"
+  ],
   "dependencies": {
+    "@arzt/core": "*",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.5",
-    "@arzt/core": "*"
+    "styled-components": "^5.3.5"
   },
   "scripts": {
     "build": "tsc"
