@@ -5,6 +5,7 @@
   "license": "MIT",
   "sourceMap": true,
   "private": true,
+  "main": "./index.js",
   "typings": "./index.d.ts",
   "dependencies": {
     "react": "^18.1.0",
