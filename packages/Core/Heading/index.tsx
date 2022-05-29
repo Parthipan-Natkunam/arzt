@@ -1,6 +1,5 @@
 import * as React from "react";
-import {Headings} from "@arzt/core";
-import { Text, TextProps } from "@arzt/core/Text";
+import { Headings, Text, TextProps } from "@arzt/core";
 
 export type HeadingProps = Omit<TextProps, "size" | "weight"> & {as: Headings };
 

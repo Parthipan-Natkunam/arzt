@@ -1,7 +1,7 @@
 {
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
-    "outDir": "../../dist/blocks",
+    "outDir": "dist",
   },
   "include": [ "index.tsx" ],
   "exclude": ["node_modules"]
