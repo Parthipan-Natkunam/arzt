@@ -16,6 +16,8 @@ const TestimonyContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  border-radius: 10px;
+  user-select: none;
   padding: ${(props) => props.theme.spacing.sm};
   border: 1px solid ${(props) => props.theme.colors.info};
   div {
