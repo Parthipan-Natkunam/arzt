@@ -121,7 +121,7 @@ a:not([class]) {
 img,
 picture {
   max-width: 100%;
-  display: block;
+  display: inline-block;
 }
 
 /* Inherit fonts for inputs and buttons */
