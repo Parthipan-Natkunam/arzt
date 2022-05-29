@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Text } from "../Text";
+import { Text } from "@arzt/core/Text";
 
 export default {
   title: "Core/Text",
