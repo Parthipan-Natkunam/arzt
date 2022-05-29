@@ -1,7 +1,7 @@
 {
   "name": "@arzt/core",
   "description": "Core for Arzt design system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "author": "Parthipan Natkunam",
   "sourceMap": true,
@@ -11,7 +11,9 @@
     "dist/*.js",
     "dist/**/*.js",
     "dist/*.d.ts",
-    "dist/**/*.d.ts"
+    "dist/**/*.d.ts",
+    "dist/*.js.map",
+    "dist/**/*.js.map"
   ],
   "dependencies": {
     "react": "^18.1.0",
