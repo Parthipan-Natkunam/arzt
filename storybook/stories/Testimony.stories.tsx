@@ -1,19 +1,19 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Comment } from "@arzt/blocks/Comment";
+import { Testimony } from "@arzt/blocks/Testimony";
 
 export default {
-  title: "Blocks/Comment",
-  component: Comment,
-} as ComponentMeta<typeof Comment>;
+  title: "Blocks/Testimony",
+  component: Testimony,
+} as ComponentMeta<typeof Testimony>;
 
-const ImageTemplate: ComponentStory<typeof Comment> = (args) => (
-  <Comment {...args} />
+const ImageTemplate: ComponentStory<typeof Testimony> = (args) => (
+  <Testimony {...args} />
 );
 
-export const CommentBlock = ImageTemplate.bind({});
-CommentBlock.args = {
+export const TestimonyBlock = ImageTemplate.bind({});
+TestimonyBlock.args = {
   imageAlt: "Sample Image",
   imageSrc: "https://randomuser.me/api/portraits/women/70.jpg",
   heading: "Lisa Simpson",

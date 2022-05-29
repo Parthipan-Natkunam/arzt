@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Text } from "@arzt/core/Text";
 import { Image } from "@arzt/core/Image";
 
-export type CommentProps = {
+export type TestimonyProps = {
   heading?: string;
   subHeading?: string;
   imageSrc: string;
@@ -12,7 +12,7 @@ export type CommentProps = {
   description?: string;
 };
 
-const CommentContainer = styled.div`
+const TestimonyContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -32,14 +32,14 @@ const CommentContainer = styled.div`
   }
 `;
 
-export const Comment: React.FC<CommentProps> = ({
+export const Testimony: React.FC<TestimonyProps> = ({
   heading,
   subHeading,
   imageSrc,
   imageAlt,
   description,
 }) => (
-  <CommentContainer>
+  <TestimonyContainer>
     <Image src={imageSrc} alt={imageAlt} width={50} rounded margin="md" />
     <div>
       <Text as="h5" variant="primary">
@@ -52,5 +52,5 @@ export const Comment: React.FC<CommentProps> = ({
         {description}
       </Text>
     </div>
-  </CommentContainer>
+  </TestimonyContainer>
 );
