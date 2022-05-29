@@ -2,6 +2,8 @@ import * as React from "react";
 import styled from "styled-components";
 import { Variant, Size, Space } from "@arzt/core";
 
+type ButtonType = "button" | "submit" | "reset";
+
 export type ButtonProps = {
   variant?: Variant;
   size?: Size;
@@ -12,6 +14,7 @@ export type ButtonProps = {
   isDisabled?: boolean;
   outline?: boolean;
   clickHandler?: () => void;
+  type?: ButtonType;
 };
 
 const StyledButton = styled.button<
@@ -62,6 +65,7 @@ const StyledButton = styled.button<
 export const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   size = "md",
+  type = "button",
   label,
   padding,
   margin,
@@ -70,9 +74,18 @@ export const Button: React.FC<ButtonProps> = ({
   outline,
   clickHandler,
 }) => {
+  let derivedVariant = variant;
+  const typeVariantMap: { [key in Exclude<ButtonType, 'button'>]: Variant } = {
+    submit: "primary",
+    reset: "danger",
+  };
+  if(type !== 'button' && typeVariantMap[type]) {
+    derivedVariant = typeVariantMap[type];
+  }
+
   return (
     <StyledButton
-      variant={variant}
+      variant={derivedVariant}
       size={size}
       padding={padding}
       margin={margin}
@@ -80,6 +93,7 @@ export const Button: React.FC<ButtonProps> = ({
       disabled={isDisabled}
       isLoading={isLoading}
       onClick={clickHandler}
+      type={type}
     >
       {/*TODO: Replace with a spinner*/}
       {isLoading ? <span>Loading...</span> : label}
