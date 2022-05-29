@@ -2,9 +2,9 @@
   "name": "@arzt/blocks",
   "description": "Arzt design system UI blocks",
   "version": "1.0.0",
+  "author": "Parthipan Natkunam",
   "license": "MIT",
   "sourceMap": true,
-  "private": true,
   "main": "./index.js",
   "typings": "./index.d.ts",
   "dependencies": {

@@ -1,9 +1,16 @@
 {
   "version": "1.0.0",
   "license": "MIT",
+  "author": "Parthipan Natkunam",
   "private": true,
+  "publishConfig":{
+    "access":"public"
+  },
   "workspaces": [
     "packages/*",
     "storybook"
-  ]
+  ],
+  "scripts": {
+    "publish:all": "chmod +x ./scripts/publish.sh && ./scripts/publish.sh"
+  }
 }

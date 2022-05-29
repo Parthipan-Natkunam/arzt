@@ -3,8 +3,8 @@
   "description": "Core for Arzt design system",
   "version": "1.0.0",
   "license": "MIT",
+  "author": "Parthipan Natkunam",
   "sourceMap": true,
-  "private": true,
   "main": "./index.js",
   "typings": "./index.d.ts",
   "dependencies": {
@@ -13,7 +13,7 @@
     "styled-components": "^5.3.5"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --build"
   },
   "devDependencies": {
     "@types/react": "^18.0.9",
