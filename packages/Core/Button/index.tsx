@@ -10,6 +10,7 @@ export type ButtonProps = {
   margin?: Space;
   isLoading?: boolean;
   isDisabled?: boolean;
+  outline?: boolean;
   clickHandler?: () => void;
 };
 
@@ -66,20 +67,16 @@ export const Button: React.FC<ButtonProps> = ({
   margin,
   isDisabled,
   isLoading,
+  outline,
   clickHandler,
 }) => {
-  let isFilled: boolean = true;
-  const unfilledVariants: Variant[] = ["tertiary", "secondary"];
-  if (unfilledVariants.includes(variant)) {
-    isFilled = false;
-  }
   return (
     <StyledButton
       variant={variant}
       size={size}
       padding={padding}
       margin={margin}
-      isFilled={isFilled}
+      isFilled={!outline}
       disabled={isDisabled}
       isLoading={isLoading}
       onClick={clickHandler}
