@@ -1,7 +1,7 @@
 {
   "name": "@arzt/blocks",
   "description": "Arzt design system UI blocks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Parthipan Natkunam",
   "license": "MIT",
   "main": "dist/index.js",
