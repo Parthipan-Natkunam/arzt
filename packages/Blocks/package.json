@@ -4,16 +4,13 @@
   "version": "1.0.3",
   "author": "Parthipan Natkunam",
   "license": "MIT",
-  "sourceMap": true,
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist/*.js",
     "dist/**/*.js",
     "dist/*.d.ts",
-    "dist/**/*.d.ts",
-    "dist/*.js.map",
-    "dist/**/*.js.map"
+    "dist/**/*.d.ts"
   ],
   "dependencies": {
     "@arzt/core": "*",
