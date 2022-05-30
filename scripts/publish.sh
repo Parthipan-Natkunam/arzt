@@ -11,16 +11,13 @@ cd ./packages/Core
 rm -rf dist
 yarn build
 
-echo Publishing Core...
-yarn publish --access public
-
-
 echo Building Blocks...
 cd ../Blocks
 rm -rf dist
 yarn build
 
-echo Publishing Blocks...
+echo Publishing Packages...
+cd ../Core
 yarn publish --access public
 
 # echo Building Storybook...

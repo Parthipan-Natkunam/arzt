@@ -1,8 +1,7 @@
 import * as React from "react";
 import styled from "styled-components";
 
-import { Text } from "@arzt/core/Text";
-import { Image } from "@arzt/core/Image";
+import { Text, Image } from "@arzt/core";
 
 export type TestimonyProps = {
   heading: string;
